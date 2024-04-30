@@ -1,0 +1,31 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+birthdays_list:
+  path: /birthdays
+  controller: App\Controller\BirthdayController::list
+  methods: GET
+
+birthday_show:
+  path: /birthdays/{id}
+  controller: App\Controller\BirthdayController::show
+  methods: GET
+
+birthday_delete:
+  path: /birthdays/{id}
+  controller: App\Controller\BirthdayController::delete
+  methods: DELETE
+
+birthday_create:
+  path: /birthdays/create
+  controller: App\Controller\BirthdayController::create
+  methods: POST
+
+birthday_update:
+  path: /birthdays/{id}/update
+  controller: App\Controller\BirthdayController::update
+  methods: PUT
+
+api_login_check:
+  path: /api/login_check
